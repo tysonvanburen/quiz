@@ -47,11 +47,11 @@ True
 Booleans
 
 16. Write 4 conditional operators.
-if, unless, else, elsif
+if, unless, else, elsif < > <= !=
 
 17. Create a method called bucket that returns an empty array.
-def self.bucket
-  {}
+def bucket
+  []
 end
 
 
@@ -66,6 +66,7 @@ class, case, do, else, end, false, true, module
 
 21. What is class inheritance?
 When a class inherits from another class. class People < John
+
 
 22. What are modules used for?
 Modules define a namespace, a sandbox in which your methods and constants can play without having to worry about being stepped on by other methods and constants.
@@ -114,13 +115,13 @@ new_array.push 5
 demo["Graham"] = demo.fetch("Graham",0) + 1
 
 34. What are 2 valid datatypes of keys for a hash?
-strings, and
+strings, array
 
 35. What is a writer method?
-attr_writer. assignes a value
+attr_writer. assignes a value to a attribute
 
 36. What is a reader method?
-attr_reader. returns a value
+attr_reader. returns a value to a attribute
 
 37. There are 4 types of variables. What are they?
 instance variable, local variable, global variable, class variable
@@ -135,7 +136,7 @@ using Raise.
 puts arr[1]
 
 41. How would you return the string `"DevPoint"` from this hash? `hsh = {:name => "DevPoint"}`
-puts hsh
+puts hsh[:name]
 
 42. What is the datatype for `:age`?
 symbol
@@ -194,10 +195,10 @@ def eat(food = "cheese")
 end
 
 60. What is a loop?
-A loob allows you to run a block of code until that code is no longer true or false
+A loop allows you to run a block of code until that code is no longer true or false
 
 61. How long has ruby been around?
-23-24 years
+21
 
 62. How are you doing on this quiz so far?
 not so good
