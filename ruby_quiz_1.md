@@ -50,11 +50,10 @@ Booleans
 if, unless, else, elsif
 
 17. Create a method called bucket that returns an empty array.
-method Bucket
-
+def self.bucket
+  {}
 end
-new_bucket=Bucket.new
-new_bucket{}
+
 
 18. Name 6 ruby special keywords. (a keyword is a word that already has a special meaning)
 class, case, do, else, end, false, true, module
@@ -96,11 +95,7 @@ daves_age = 22
 if daves_age >= 21
 
 29. Instantiate a `Car` class.
-class Car
-  def initialize(maker, year)
-    @maker, @year = maker, year
-  end
-end
+old_n_busted = Car.new
 
 new_car = Car.new("Toyota", 2014)
 
@@ -185,7 +180,7 @@ object oriented programming. lol I'm a little brain dead.
 to create an instance of a class
 
 56. What is the name of the method that is called every time an object is instantiated?
-.new
+initialize
 
 57. What are arguments?
 def name(string)
@@ -194,8 +189,9 @@ def name(string)
 by assigning an attribute to the argument then pass it at the end of the code
 
 59. Write a method called `eat` that has an argument `food` with a default value of `"cheese"`.
-food = "cheese"
- def
+def eat(food = "cheese")
+  puts food
+end
 
 60. What is a loop?
 A loob allows you to run a block of code until that code is no longer true or false
@@ -230,10 +226,13 @@ A method will return true or false. Class methods are used to reference the Clas
 Instance of the class
 
 69. How do you add a dependency to a file?
-*
+require 'dependency'
 
 70. I have a text file called `names.txt`. Each name is on it's own line. How would you print all the names in the file?
-*
+file=File.open("names.txt","r")
+file.each_line do |line| puts line end
+
+file.close
 
 71. When a method defines an argument that has a asterisk in front of a variable name, what is that asterisk referred to? e.g. `def thing(*stuff)`
 A splat
